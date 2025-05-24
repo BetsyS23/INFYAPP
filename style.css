@@ -1,66 +1,97 @@
-
+/* Overall Page Styling */
 body {
-  background-color: #e6f2ff; /* Light blue background */
-  color: #033e6b; /* Darker blue text */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eaf6fb;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
+/* Navbar */
 .navbar {
-  background-color: #007acc !important; /* Medium-light blue */
+  background-color: #0077b6 !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-brand {
-  color: #ffffff !important;
   font-weight: bold;
+  color: white !important;
 }
 
-
-h1, h3 {
-  color: #005b96;
-}
-
+/* Headings */
 h1 {
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 2.8rem;
+  color: #023e8a;
+  margin-top: 1rem;
 }
 
 h3 {
+  color: #0096c7;
   margin-top: 2rem;
-  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
+/* Sections (Cards) */
+.container p,
+.container div.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 1rem auto;
+}
 
-p {
+/* Emphasis */
+em {
   font-size: 1.1rem;
-  line-height: 1.6;
-  color: #033e6b;
+  color: #495057;
 }
 
+/* Divider */
 hr {
-  border: 0;
-  height: 1px;
-  background-color: #b3d9ff;
-  margin: 2rem 0;
+  height: 2px;
+  border: none;
+  background-color: #90e0ef;
+  margin: 2rem auto;
+  max-width: 800px;
 }
 
-/* Links */
+/* Link Styling */
 a {
-  color: #007acc;
-  text-decoration: underline;
-}
-
-a:hover {
-  color: #005b96;
+  color: #0077b6;
   text-decoration: none;
 }
 
-/* Iframes and Videos */
-iframe, video {
-  border-radius: 8px;
-  border: 1px solid #cce0ff;
+a:hover {
+  text-decoration: underline;
 }
 
-/* Container Spacing */
-.container {
-  padding-bottom: 3rem;
+/* iFrame & Video */
+.ratio iframe,
+video {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 100%;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .container p {
+    padding: 15px;
+  }
+
+  video {
+    width: 100% !important;
+  }
+}
+
